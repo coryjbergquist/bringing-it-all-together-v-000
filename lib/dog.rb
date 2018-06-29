@@ -74,6 +74,7 @@ class Dog
 
   def self.new_from_db(db)
     db_dog = self.new(db)
+    binding.pry
     db_dog.id = db[:id]
     db_dog
   end
