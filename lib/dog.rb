@@ -95,6 +95,8 @@ class Dog
   def update
     binding.pry
     sql = "UPDATE dogs SET name = ? AND breed = ?"
+    DB[:conn].execute(sql, self.name, self.breed)
+    
   end
 
 end
