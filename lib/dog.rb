@@ -71,7 +71,7 @@ class Dog
       new_dog = self.new(dog_hash, dog_hash[:id])
     end
     new_dog
-
+    binding.pry
   end
 
 
