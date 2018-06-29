@@ -93,9 +93,9 @@ class Dog
   end
 
   def update
-    sql = "UPDATE dogs SET name = ?, breed = ? WERE name = ?"
+    sql = "UPDATE dogs SET name = ?, breed = ? WERE id = ?"
     binding.pry
-    DB[:conn].execute(sql, self.name, self.breed, self.find_by_name)
+    DB[:conn].execute(sql, self.name, self.breed, self.id)
 
   end
 
