@@ -88,6 +88,7 @@ class Dog
     dog_hash[:breed] = found_dog[0][2]
     new_dog = self.new(dog_hash)
     new_dog.id = found_dog[0][0]
+    new_dog
 
   end
 
