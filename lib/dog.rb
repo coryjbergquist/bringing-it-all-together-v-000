@@ -57,10 +57,9 @@ class Dog
     find = DB[:conn].execute(sql, hash)[:name]
     if !find.empty?
       binding.pry
-
       found_dog = find[0]
       new_dog = self.new
-    
+
 
 
   end
