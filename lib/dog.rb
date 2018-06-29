@@ -90,7 +90,10 @@ class Dog
     new_dog = self.new(dog_hash)
     new_dog.id = found_dog[0][0]
     new_dog
+  end
 
+  def update
+    sql = "UPDATE dogs SET name = ? AND breed = ?"
   end
 
 end
