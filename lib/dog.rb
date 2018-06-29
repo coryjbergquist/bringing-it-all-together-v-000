@@ -59,7 +59,7 @@ class Dog
 
       found_dog = find[0]
       new_dog = self.new
-    end
+    
 
 
   end
