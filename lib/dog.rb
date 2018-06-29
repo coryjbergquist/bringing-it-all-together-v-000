@@ -75,7 +75,7 @@ class Dog
   def self.new_from_db(db)
     db_dog = self.new(db)
     db_dog.id = db[0]
-    
+    db_dog
   end
 
 
