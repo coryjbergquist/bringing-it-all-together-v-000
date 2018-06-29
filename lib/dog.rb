@@ -63,6 +63,7 @@ class Dog
       dog_hash[:id] = found_dog[0]
       new_dog = self.new(dog_hash)
       new_dog
+      binding.pry
     end
 
   end
