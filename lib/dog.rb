@@ -76,8 +76,8 @@ class Dog
     dog_hash = {}
     dog_hash[:name] = db[1]
     dog_hash[:breed] = db[2]
+    dog_hash[:id] = db [0]
     db_dog = self.new(dog_hash)
-    db_dog.id = db[:id]
     db_dog
   end
 
