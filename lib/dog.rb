@@ -82,6 +82,7 @@ class Dog
   end
 
   def self.find_by_name(db)
+    dog_hash = {}
     sql = "SELECT * FROM dogs WHERE name = ?"
     found_dog = DB[:conn].execute(sql, db)
     dog_hash[:name] = found_dog[0][1]
