@@ -57,6 +57,7 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     find = DB[:conn].execute(sql, hash[:name], hash[:breed])
     if !find.empty?
+      binding.pry
       found_dog = find[0]
       dog_hash[:name] = found_dog[1]
       dog_hash[:breed] = found_dog[2]
