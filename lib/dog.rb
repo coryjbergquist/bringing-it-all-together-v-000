@@ -72,7 +72,6 @@ class Dog
       new_dog.save
     end
     new_dog
-    binding.pry
   end
 
 
