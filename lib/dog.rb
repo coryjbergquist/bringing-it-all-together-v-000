@@ -65,10 +65,9 @@ class Dog
       new_dog = self.new(dog_hash, dog_hash[:id])
 
     else
-      found_dog = find[0]
-      dog_hash[:name] = found_dog[1]
-      dog_hash[:breed] = found_dog[2]
-      dog_hash[:id] = found_dog[0]
+      
+      dog_hash[:name] = hash[:name]
+      dog_hash[:breed] = hash[:breed]
       new_dog = self.create(dog_hash)
     end
     new_dog
