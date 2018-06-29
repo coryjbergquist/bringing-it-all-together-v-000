@@ -56,7 +56,6 @@ class Dog
     dog_hash = {}
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     find = DB[:conn].execute(sql, hash[:name], hash[:breed])
-    binding.pry
     if !find.empty?
       found_dog = find[0]
       dog_hash[:name] = found_dog[1]
@@ -65,7 +64,7 @@ class Dog
       new_dog = self.new(dog_hash, dog_hash[:id])
 
     else
-      
+
       dog_hash[:name] = hash[:name]
       dog_hash[:breed] = hash[:breed]
       new_dog = self.create(dog_hash)
