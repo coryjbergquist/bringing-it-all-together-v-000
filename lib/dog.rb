@@ -73,7 +73,9 @@ class Dog
   end
 
   def self.new_from_db(db)
-    binding.pry
+    dog_hash = {}
+    dog_hash[:name] = db[1]
+    dog_hash[:breed] = db[2]
     db_dog = self.new(db)
     db_dog.id = db[:id]
     db_dog
