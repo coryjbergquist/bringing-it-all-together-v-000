@@ -62,10 +62,8 @@ class Dog
       dog_hash[:name] = found_dog[1]
       dog_hash[:breed] = found_dog[2]
       dog_hash[:id] = found_dog[0]
-
-      a = self.new(dog_hash)
-      a.id = id
-      a
+      new_dog = self.new(dog_hash)
+      new_dog
     end
 
   end
