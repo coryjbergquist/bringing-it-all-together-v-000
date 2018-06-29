@@ -59,9 +59,9 @@ class Dog
     if !find.empty?
       binding.pry
       found_dog = find[0]
-      dog_hash[name] = found_dog[1]
-      dog_hash[breed] = found_dog[2]
-      dog_hash[id] = found_dog[0]
+      dog_hash[:name] = found_dog[1]
+      dog_hash[:breed] = found_dog[2]
+      dog_hash[:id] = found_dog[0]
       new_dog = self.new(dog_hash)
       new_dog
     end
